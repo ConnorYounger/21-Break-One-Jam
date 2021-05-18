@@ -47,6 +47,11 @@ namespace HelloWorld
         void Update()
         {
             transform.position = Position.Value;
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                Move();
+            }
         }
     }
 }
